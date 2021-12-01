@@ -9,7 +9,7 @@ case "$2" in
 		build/main < in/"${1}${2}.txt"
 		;;
 	2)
-		build/main - < in/"${1}{$2}.txt"
+		build/main - < in/"${1}${2}.txt"
 		;;
 	*)
 		echo "Usage: $0 (part|demo) (1|2)" >&2

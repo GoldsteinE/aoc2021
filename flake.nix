@@ -8,7 +8,13 @@
     let pkgs = (import nixpkgs { inherit system; }); in {
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
+          # Generally useful
           gdb
+          # For scripts
+          shellcheck
+          # Day 1
+          gcc
+          binutils
         ];
       };
     }

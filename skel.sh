@@ -32,5 +32,6 @@ cat > "$day/scripts/run.sh" <<'EOF'
 set -e
 cd "$(dirname "$0")"/..
 EOF
+chmod +x "${day}"/scripts/run.sh "${day}"/scripts/build.sh
 
 echo "Successfully created skeleton directory for day $1"

@@ -15,6 +15,8 @@
           # Day 1
           gcc
           binutils
+          # Day 2
+          gawk
         ];
       };
     }

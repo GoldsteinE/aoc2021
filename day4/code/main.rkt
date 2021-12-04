@@ -11,9 +11,8 @@
 
 (define any-of
   (lambda (xs)
-    (and
-      (pair? xs)
-      (or (car xs) (any-of (cdr xs))))))
+    (and (pair? xs)
+         (or (car xs) (any-of (cdr xs))))))
 
 (define check-board-row
   (lambda (row numbers)
@@ -75,15 +74,18 @@
 (define play-last
   (lambda (step all-numbers boards)
     (letrec ([numbers (list-tail all-numbers step)]
-             [winning-boards (filter (lambda (board) (check-board board numbers)) boards)])
-      (if (or (null? winning-boards) (not (null? (cdr boards))))
-        (play-last (- step 1) all-numbers (filter (lambda (board) (not (member board winning-boards))) boards))
+             [winning-boards (filter (lambda (board) (check-board board numbers)) boards)]
+             [other-boards (filter (lambda (board) (not (check-board board numbers))) boards)])
+      (if (or (null? winning-boards) (not (null? other-boards)))
+        (play-last (- step 1) all-numbers other-boards)
         (score-board (car winning-boards) numbers)))))
 
-(let ([numbers (reverse (parse-numbers (read-line)))]
-      [boards (read-boards)])
-  (if (equal? (vector-ref (current-command-line-arguments) 0) "1")
-    (writeln (play (- (length numbers) 1) numbers boards))
-    (writeln (play-last (- (length numbers) 1) numbers boards))))
+(letrec ([numbers (reverse (parse-numbers (read-line)))]
+         [boards (read-boards)]
+         [first-step (- (length numbers) 1)]
+         [part (vector-ref (current-command-line-arguments) 0)])
+  (if (equal? part "1")
+    (writeln (play first-step numbers boards))
+    (writeln (play-last first-step numbers boards))))
 
 ; vim: ts=2 sw=2 et

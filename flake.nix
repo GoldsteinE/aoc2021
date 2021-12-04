@@ -17,6 +17,8 @@
           binutils
           # Day 2
           gawk
+          # Day 4
+          pltScheme
         ];
       };
     }

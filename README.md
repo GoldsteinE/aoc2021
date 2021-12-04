@@ -10,6 +10,7 @@ Any programs needed to run the code will be available via dev shell in the `flak
 |  1  | GNU Assembler (w/o libc) | [`./day1/`](/day1) |
 |  2  | GNU Awk                  | [`./day2/`](/day2) |
 |  3  | Nix                      | [`./day3/`](/day3) |
+|  4  | Racket                   | [`./day4/`](/day4) |
 
 ## `check.sh`
 

@@ -19,6 +19,8 @@
           gawk
           # Day 4
           pltScheme
+          # Day 5
+          ocaml
         ];
       };
     }

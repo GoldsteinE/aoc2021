@@ -11,6 +11,7 @@ Any programs needed to run the code will be available via dev shell in the `flak
 |  2  | GNU Awk                  | [`./day2/`](/day2) |
 |  3  | Nix                      | [`./day3/`](/day3) |
 |  4  | Racket                   | [`./day4/`](/day4) |
+|  5  | OCaml                    | [`./day5/`](/day5) |
 
 ## `check.sh`
 

@@ -13,6 +13,7 @@ Any programs needed to run the code will be available via dev shell in the `flak
 |  4  | Racket                   | [`./day4/`](/day4) |
 |  5  | OCaml                    | [`./day5/`](/day5) |
 |  6  | Python bytecode          | [`./day6/`](/day6) |
+|  7  | Ada                      | [`./day7/`](/day7) |
 
 ## `check.sh`
 

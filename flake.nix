@@ -24,6 +24,8 @@
           # Day 6
           python39
           mypy
+          # Day 7
+          gnat
         ];
       };
     }

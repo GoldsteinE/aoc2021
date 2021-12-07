@@ -21,6 +21,9 @@
           pltScheme
           # Day 5
           ocaml
+          # Day 6
+          python39
+          mypy
         ];
       };
     }

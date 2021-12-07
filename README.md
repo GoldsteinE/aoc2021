@@ -1,4 +1,4 @@
-# Advent of Code 2021: 5/25 langs
+# Advent of Code 2021: 6/25 langs
 
 I’ll try to solve this Advent of Code using different language for each day.
 Any programs needed to run the code will be available via dev shell in the `flake.nix`.
@@ -12,6 +12,7 @@ Any programs needed to run the code will be available via dev shell in the `flak
 |  3  | Nix                      | [`./day3/`](/day3) |
 |  4  | Racket                   | [`./day4/`](/day4) |
 |  5  | OCaml                    | [`./day5/`](/day5) |
+|  6  | Python bytecode          | [`./day6/`](/day6) |
 
 ## `check.sh`
 

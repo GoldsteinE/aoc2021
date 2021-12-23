@@ -126,7 +126,6 @@ def run(code: str) -> None:
         pass
 
     injectee.__code__ = compile_opcodes(code)
-    import dis
     injectee()
 
 

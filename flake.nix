@@ -26,6 +26,8 @@
           mypy
           # Day 7
           gnat
+          # Day 8
+          php80
         ];
       };
     }
